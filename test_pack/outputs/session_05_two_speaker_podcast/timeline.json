@@ -1,0 +1,557 @@
+{
+  "version": "1.0.0",
+  "timeline_id": "067307b1-52cb-45bc-822b-c47d472a6937",
+  "source_media": {
+    "source_id": "src_001",
+    "file_name": "two_speaker_podcast.mp4",
+    "duration_s": 60.0,
+    "fps": 30.0,
+    "width": 640,
+    "height": 360,
+    "has_audio": true,
+    "source_sha256": "31d0381ce3c595f1d865054c11819d268ed87d0e6b2829a96e0485d8676f7672",
+    "storage_url": "test_pack/media/two_speaker_podcast.mp4"
+  },
+  "transcript": {
+    "words": [
+      {
+        "id": "w_pod_000",
+        "text": "welcome",
+        "start_s": 1.0,
+        "end_s": 1.5,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_001",
+        "text": "to",
+        "start_s": 1.6,
+        "end_s": 1.8,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_002",
+        "text": "our",
+        "start_s": 1.9,
+        "end_s": 2.1,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_003",
+        "text": "podcast",
+        "start_s": 2.2,
+        "end_s": 2.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_004",
+        "text": "today",
+        "start_s": 3.0,
+        "end_s": 3.4,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_005",
+        "text": "we",
+        "start_s": 3.5,
+        "end_s": 3.7,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_006",
+        "text": "have",
+        "start_s": 3.8,
+        "end_s": 4.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_007",
+        "text": "a",
+        "start_s": 4.1,
+        "end_s": 4.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_008",
+        "text": "special",
+        "start_s": 4.3,
+        "end_s": 4.8,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_009",
+        "text": "guest",
+        "start_s": 4.9,
+        "end_s": 5.4,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_010",
+        "text": "what",
+        "start_s": 7.0,
+        "end_s": 7.3,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_011",
+        "text": "did",
+        "start_s": 7.4,
+        "end_s": 7.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_012",
+        "text": "you",
+        "start_s": 7.7,
+        "end_s": 7.9,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_013",
+        "text": "do",
+        "start_s": 8.0,
+        "end_s": 8.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_014",
+        "text": "at",
+        "start_s": 8.3,
+        "end_s": 8.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_015",
+        "text": "your",
+        "start_s": 8.6,
+        "end_s": 8.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_016",
+        "text": "old",
+        "start_s": 8.9,
+        "end_s": 9.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_017",
+        "text": "job",
+        "start_s": 9.3,
+        "end_s": 9.8,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_018",
+        "text": "at",
+        "start_s": 11.0,
+        "end_s": 11.3,
+        "speaker": "speaker_2",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_019",
+        "text": "my",
+        "start_s": 11.4,
+        "end_s": 11.6,
+        "speaker": "speaker_2",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_020",
+        "text": "old",
+        "start_s": 11.7,
+        "end_s": 12.0,
+        "speaker": "speaker_2",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_021",
+        "text": "job",
+        "start_s": 12.1,
+        "end_s": 12.6,
+        "speaker": "speaker_2",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_022",
+        "text": "i",
+        "start_s": 12.7,
+        "end_s": 12.9,
+        "speaker": "speaker_2",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_023",
+        "text": "was",
+        "start_s": 13.0,
+        "end_s": 13.3,
+        "speaker": "speaker_2",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_024",
+        "text": "a",
+        "start_s": 13.4,
+        "end_s": 13.5,
+        "speaker": "speaker_2",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_025",
+        "text": "senior",
+        "start_s": 13.6,
+        "end_s": 14.1,
+        "speaker": "speaker_2",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_026",
+        "text": "video",
+        "start_s": 14.2,
+        "end_s": 14.6,
+        "speaker": "speaker_2",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_027",
+        "text": "producer",
+        "start_s": 14.7,
+        "end_s": 15.5,
+        "speaker": "speaker_2",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_028",
+        "text": "managing",
+        "start_s": 15.6,
+        "end_s": 16.2,
+        "speaker": "speaker_2",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_029",
+        "text": "client",
+        "start_s": 16.3,
+        "end_s": 16.7,
+        "speaker": "speaker_2",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_030",
+        "text": "campaigns",
+        "start_s": 16.8,
+        "end_s": 17.5,
+        "speaker": "speaker_2",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_031",
+        "text": "that",
+        "start_s": 19.0,
+        "end_s": 19.3,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_032",
+        "text": "is",
+        "start_s": 19.4,
+        "end_s": 19.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_033",
+        "text": "fascinating",
+        "start_s": 19.7,
+        "end_s": 20.6,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_034",
+        "text": "tell",
+        "start_s": 21.0,
+        "end_s": 21.3,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_035",
+        "text": "us",
+        "start_s": 21.4,
+        "end_s": 21.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_036",
+        "text": "about",
+        "start_s": 21.7,
+        "end_s": 22.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_037",
+        "text": "your",
+        "start_s": 22.1,
+        "end_s": 22.3,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_038",
+        "text": "new",
+        "start_s": 22.4,
+        "end_s": 22.7,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_039",
+        "text": "startup",
+        "start_s": 22.8,
+        "end_s": 23.5,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_040",
+        "text": "our",
+        "start_s": 25.0,
+        "end_s": 25.3,
+        "speaker": "speaker_2",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_041",
+        "text": "new",
+        "start_s": 25.4,
+        "end_s": 25.7,
+        "speaker": "speaker_2",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_042",
+        "text": "startup",
+        "start_s": 25.8,
+        "end_s": 26.5,
+        "speaker": "speaker_2",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_043",
+        "text": "builds",
+        "start_s": 26.6,
+        "end_s": 27.1,
+        "speaker": "speaker_2",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_044",
+        "text": "ai",
+        "start_s": 27.2,
+        "end_s": 27.5,
+        "speaker": "speaker_2",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_pod_045",
+        "text": "tools",
+        "start_s": 27.6,
+        "end_s": 28.2,
+        "speaker": "speaker_2",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      }
+    ],
+    "speakers": [
+      "speaker_1",
+      "speaker_2"
+    ],
+    "language": "en"
+  },
+  "video_track": {
+    "clips": [
+      {
+        "clip_id": "clip_f1c9a295",
+        "source_start_s": 0.0,
+        "source_end_s": 11.7,
+        "speed_factor": 1.0,
+        "word_ids": [
+          "w_pod_000",
+          "w_pod_001",
+          "w_pod_002",
+          "w_pod_003",
+          "w_pod_004",
+          "w_pod_005",
+          "w_pod_006",
+          "w_pod_007",
+          "w_pod_008",
+          "w_pod_009",
+          "w_pod_010",
+          "w_pod_011",
+          "w_pod_012",
+          "w_pod_013",
+          "w_pod_014",
+          "w_pod_015",
+          "w_pod_016",
+          "w_pod_017",
+          "w_pod_018",
+          "w_pod_019"
+        ],
+        "is_muted": false
+      },
+      {
+        "clip_id": "clip_60b82898",
+        "source_start_s": 17.5,
+        "source_end_s": 60.0,
+        "speed_factor": 1.0,
+        "word_ids": [
+          "w_pod_031",
+          "w_pod_032",
+          "w_pod_033",
+          "w_pod_034",
+          "w_pod_035",
+          "w_pod_036",
+          "w_pod_037",
+          "w_pod_038",
+          "w_pod_039",
+          "w_pod_040",
+          "w_pod_041",
+          "w_pod_042",
+          "w_pod_043",
+          "w_pod_044",
+          "w_pod_045"
+        ],
+        "is_muted": false
+      }
+    ]
+  },
+  "audio_track": {
+    "ducking_enabled": false,
+    "ducking_db": -18.0,
+    "background_music": null,
+    "bleeps": []
+  },
+  "caption_track": {
+    "captions": []
+  },
+  "history_steps": [],
+  "undo_pointer": -1,
+  "derived_timing": {
+    "total_duration_s": 54.2,
+    "active_clip_count": 2,
+    "timeline_hash": "2189ef133b40c5ab7af964acf8bf98e8dc5dbcadb2bd8fb19ae7ffec8399872e"
+  }
+}

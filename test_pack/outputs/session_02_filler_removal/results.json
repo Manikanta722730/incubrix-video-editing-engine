@@ -1,0 +1,59 @@
+{
+  "session_file": "test_pack/sessions\\session_02_filler_removal.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 3,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Remove filler words",
+      "status": "applied",
+      "operations": [
+        "remove_fillers"
+      ],
+      "summary": "Removed 2 filler words (uh, um). New duration: 03:59.300.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "3609bad60b9c9d977a725b8be13bc07fe2ff67c82cce6e43c8cf6d9095bc0e13",
+      "duration_s": 239.3,
+      "time_policy": null,
+      "latency_s": 0.001
+    },
+    {
+      "step_index": 2,
+      "say": "Undo",
+      "status": "applied",
+      "operations": [
+        "undo"
+      ],
+      "summary": "Reversed step. Reversed step: 'Remove filler words' (remove_fillers). Duration now 04:00.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "403fd8087a3492ab5538604b36c12539f1203733e3b2971f9af09c1866270d33",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "Cut out the ums and uhs",
+      "status": "applied",
+      "operations": [
+        "remove_fillers"
+      ],
+      "summary": "Removed 2 filler words (uh, um). New duration: 03:59.300.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "3609bad60b9c9d977a725b8be13bc07fe2ff67c82cce6e43c8cf6d9095bc0e13",
+      "duration_s": 239.3,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 239.3,
+  "final_timeline_hash": "3609bad60b9c9d977a725b8be13bc07fe2ff67c82cce6e43c8cf6d9095bc0e13"
+}

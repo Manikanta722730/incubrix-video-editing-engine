@@ -1,0 +1,139 @@
+{
+  "session_file": "test_pack/sessions\\session_01_worked_example.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 8,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Add a caption 'Welcome!' when I say welcome to the channel",
+      "status": "applied",
+      "operations": [
+        "add_caption"
+      ],
+      "summary": "Caption 'Welcome!' attached to 4 words ('welcome to the channel') at original time 00:42-00:44. Currently plays at 00:42-00:44 on active timeline.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "b02f5d6b4a5d87df21b791be866f49ac97072f081e88c3f14878b0eae0c1417d",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "Cut the first 30 seconds",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 30.0s (00:00 to 00:30). Duration changed from 04:00 to 03:30. Using policy 'original_media_time': input 00:00-00:30 maps to current timeline 00:00 to 00:30. Caption 'Welcome!' now plays at 00:12-00:14.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "19076a326e7ebcee86a4328824089adfdb63ea80351375485b8f4ec44c372078",
+      "duration_s": 210.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "Remove the part about pricing",
+      "status": "applied",
+      "operations": [
+        "cut_topic"
+      ],
+      "summary": "Removed pricing section (02:37.950 to 02:42.750).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "423014a94da4be0e950de7da9be4e5a865f3296005711a5d3499dacf3f9f119e",
+      "duration_s": 205.2,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 4,
+      "say": "Speed up from 1:00 to 1:30 by 2x",
+      "status": "applied",
+      "operations": [
+        "speed_range"
+      ],
+      "summary": "Applied 2.0x speed from 01:00 to 01:30. Duration updated to 03:10.200. Using policy 'original_media_time': input 01:00-01:30 maps to current timeline 00:30 to 01:00.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "578421157e45d5cf7ac37551872ef8f433400d55124738d9e938b85ac59e25c5",
+      "duration_s": 190.2,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 5,
+      "say": "Actually, put the intro back",
+      "status": "applied",
+      "operations": [
+        "restore_edit"
+      ],
+      "summary": "Restored range 0.0s-30.0s from edit 'Cut the first 30 seconds'.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "4626bf097e180c99ceffc03195d9a3d146b1293045c90766736e1dda80985f72",
+      "duration_s": 220.2,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 6,
+      "say": "Undo",
+      "status": "applied",
+      "operations": [
+        "undo"
+      ],
+      "summary": "Reversed step. Reversed step: 'Actually, put the intro back' (restore_edit). Duration now 03:10.200.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "578421157e45d5cf7ac37551872ef8f433400d55124738d9e938b85ac59e25c5",
+      "duration_s": 190.2,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 7,
+      "say": "Make that caption red",
+      "status": "applied",
+      "operations": [
+        "style_caption"
+      ],
+      "summary": "Applied 'red' to caption 'Welcome!', the only one that exists.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "54c236d4cda667cf188a6988fa14f7b3de97ce4fb1e09c7429f48417a9b271b9",
+      "duration_s": 190.2,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 8,
+      "say": "render",
+      "status": "applied",
+      "operations": [
+        "render"
+      ],
+      "summary": "Audio and video in sync within 1 frame. Render length matches timeline (03:10.200).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "54c236d4cda667cf188a6988fa14f7b3de97ce4fb1e09c7429f48417a9b271b9",
+      "duration_s": 190.2,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 190.2,
+  "final_timeline_hash": "54c236d4cda667cf188a6988fa14f7b3de97ce4fb1e09c7429f48417a9b271b9"
+}

@@ -1,0 +1,6 @@
+video: test_pack/media/two_speaker_podcast.mp4
+description: 'Two-speaker scenario: removes guest lines about old job and asks about
+  host question'
+steps:
+- say: remove everything the guest says about their old job
+- say: render

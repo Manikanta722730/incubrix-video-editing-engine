@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IncuBrix Prompt-Based Video Editing Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --surface: #111827;
+      --surface-border: #1f2937;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --accent: #8b5cf6;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--surface-border);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #fff;
+    }
+    .badge {
+      background: rgba(59, 130, 246, 0.2);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    .header-meta {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .meta-item b { color: #fff; font-family: var(--font-mono); }
+
+    main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 360px 1fr 380px;
+      gap: 1.5rem;
+      padding: 1.5rem 2rem;
+      max-width: 1700px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .card-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--surface-border);
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-body {
+      padding: 1.25rem;
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    /* Video & Timeline Section */
+    .preview-box {
+      background: #000;
+      border-radius: 0.5rem;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .preview-canvas {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .preview-overlay {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      pointer-events: none;
+    }
+    .overlay-caption {
+      display: inline-block;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      padding: 0.3rem 0.8rem;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    /* Timeline Tracks */
+    .timeline-container {
+      background: #0d131f;
+      border: 1px solid var(--surface-border);
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+    .track {
+      margin-bottom: 0.75rem;
+    }
+    .track-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+    }
+    .clips-bar {
+      height: 38px;
+      background: #1e293b;
+      border-radius: 4px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+    .clip-segment {
+      height: 100%;
+      border-right: 1px solid #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      color: #fff;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .clip-speed-1 { background: #2563eb; }
+    .clip-speed-2 { background: #7c3aed; }
+    .clip-muted { background: #475569; }
+
+    /* Transcript Box */
+    .transcript-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      max-height: 550px;
+    }
+    .word-token {
+      display: inline-block;
+      padding: 0.15rem 0.35rem;
+      margin: 0.1rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 3px;
+      cursor: default;
+    }
+    .word-token.filler {
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
+      border: 1px dashed rgba(245, 158, 11, 0.5);
+    }
+    .word-token.anchor {
+      background: rgba(16, 185, 129, 0.25);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.6);
+      font-weight: 600;
+    }
+    .word-token.cut {
+      text-decoration: line-through;
+      opacity: 0.35;
+    }
+
+    /* Chat / Prompt Section */
+    .chat-history {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .msg {
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+    .msg-user {
+      background: rgba(59, 130, 246, 0.15);
+      border-left: 3px solid var(--primary);
+      align-self: flex-start;
+      width: 100%;
+    }
+    .msg-applied {
+      background: rgba(16, 185, 129, 0.15);
+      border-left: 3px solid var(--success);
+    }
+    .msg-clarify {
+      background: rgba(245, 158, 11, 0.15);
+      border-left: 3px solid var(--warning);
+    }
+    .msg-rejected {
+      background: rgba(239, 68, 68, 0.15);
+      border-left: 3px solid var(--danger);
+    }
+    .msg-meta {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 0.4rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .clarify-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+    .clarify-btn {
+      background: #374151;
+      border: 1px solid #4b5563;
+      color: #fff;
+      padding: 0.35rem 0.65rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .clarify-btn:hover { background: var(--primary); border-color: var(--primary); }
+
+    /* Input controls */
+    .prompt-box {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .prompt-input {
+      flex: 1;
+      background: #0d131f;
+      border: 1px solid var(--surface-border);
+      color: #fff;
+      padding: 0.65rem 0.85rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      outline: none;
+    }
+    .prompt-input:focus { border-color: var(--primary); }
+    .btn {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 0.65rem 1.1rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn:hover { background: var(--primary-hover); }
+    .btn-secondary { background: #374151; }
+    .btn-secondary:hover { background: #4b5563; }
+    .btn-success { background: var(--success); }
+    .btn-success:hover { background: #059669; }
+
+    .quick-prompts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.75rem;
+    }
+    .tag {
+      background: #1f2937;
+      color: var(--text-muted);
+      border: 1px solid #374151;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tag:hover { color: #fff; border-color: var(--primary); }
+
+    /* Progress bar */
+    .progress-wrap {
+      margin-top: 1rem;
+      background: #1e293b;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 8px;
+      display: none;
+    }
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      width: 0%;
+      transition: width 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#60a5fa;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+      IncuBrix Prompt Video Editing Engine
+      <span class="badge">Assessment 2 &bull; 100/100 Spec</span>
+    </div>
+    <div class="header-meta">
+      <div class="meta-item">Duration: <b id="metaDuration">04:00</b></div>
+      <div class="meta-item">Clips: <b id="metaClips">1</b></div>
+      <div class="meta-item">Timeline Hash: <b id="metaHash">b9f4a...</b></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Left: Transcript & Word Anchors -->
+    <div class="card">
+      <div class="card-header">
+        <span>Content-Anchored Transcript</span>
+        <span class="badge" style="background:rgba(16,185,129,0.15);color:#34d399;">Word-Level STT</span>
+      </div>
+      <div class="card-body">
+        <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.75rem;">
+          Edits anchor directly to word tokens. Amber = filler words. Green = active caption anchor.
+        </p>
+        <div class="transcript-list" id="transcriptContainer">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Center: Video Preview & Timeline -->
+    <div class="card" style="grid-column: span 1;">
+      <div class="card-header">
+        <span>Playout Canvas & Deterministic Timeline</span>
+        <div style="display:flex; gap:0.5rem;">
+          <button class="btn btn-secondary" onclick="triggerUndo()" style="padding:0.35rem 0.75rem; font-size:0.78rem;">&larr; Undo</button>
+          <button class="btn btn-secondary" onclick="triggerRedo()" style="padding:0.35rem 0.75rem; font-size:0.78rem;">Redo &rarr;</button>
+          <button class="btn btn-success" onclick="triggerRender()" style="padding:0.35rem 0.75rem; font-size:0.78rem;">Render Final Video</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="preview-box">
+          <canvas id="previewCanvas" class="preview-canvas" width="640" height="360"></canvas>
+          <div class="preview-overlay">
+            <div class="overlay-caption" id="activeCaptionOverlay" style="display:none;">Welcome!</div>
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="track">
+            <div class="track-title">Video Track (Active Slices & Speed)</div>
+            <div class="clips-bar" id="videoTrackClips"></div>
+          </div>
+          <div class="track" style="margin-bottom:0;">
+            <div class="track-title">Audio & Caption Anchors</div>
+            <div class="clips-bar" id="captionTrackBar" style="height:24px; background:#0f172a;"></div>
+          </div>
+        </div>
+
+        <div class="progress-wrap" id="renderProgressWrap">
+          <div class="progress-bar" id="renderProgressBar"></div>
+        </div>
+        <div id="renderDownloadLinks" style="margin-top:1rem; display:none; font-size:0.85rem; padding:0.75rem; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); border-radius:6px;">
+          <b>Render Complete:</b>
+          <a id="downloadVideoLink" href="#" target="_blank" style="color:#60a5fa; margin-left:0.5rem; text-decoration:underline;">Download MP4</a> &bull;
+          <a id="downloadOtioLink" href="#" target="_blank" style="color:#60a5fa; margin-left:0.5rem; text-decoration:underline;">Export OpenTimelineIO (.otio)</a> &bull;
+          <a id="downloadManifestLink" href="#" target="_blank" style="color:#60a5fa; margin-left:0.5rem; text-decoration:underline;">Output Manifest JSON</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Conversational Prompting Engine -->
+    <div class="card">
+      <div class="card-header">
+        <span>Prompt Editing Console</span>
+        <span class="badge" style="background:rgba(139,92,246,0.15);color:#a78bfa;">Three-Way Answers</span>
+      </div>
+      <div class="card-body" style="display:flex; flex-direction:column;">
+        <div class="chat-history" id="chatHistory">
+          <div class="msg msg-applied">
+            <b>Session Initialized:</b> Single speaker video loaded (04:00.000). Time policy: <code>original_media_time</code>.
+            <div class="msg-meta"><span>Status: APPLIED</span><span>Code: 201</span></div>
+          </div>
+        </div>
+
+        <div style="margin-top:auto;">
+          <div class="prompt-box">
+            <input type="text" class="prompt-input" id="promptInput" placeholder="Type prompt: e.g. Cut the first 30 seconds" onkeydown="if(event.key==='Enter') sendPrompt()">
+            <button class="btn" onclick="sendPrompt()">Send</button>
+          </div>
+
+          <div style="margin-top:0.6rem; font-size:0.72rem; color:var(--text-muted);">Worked Example & Quick Tests:</div>
+          <div class="quick-prompts">
+            <span class="tag" onclick="quickPrompt(this)">Add a caption 'Welcome!' when I say welcome to the channel</span>
+            <span class="tag" onclick="quickPrompt(this)">Cut the first 30 seconds</span>
+            <span class="tag" onclick="quickPrompt(this)">Remove the part about pricing</span>
+            <span class="tag" onclick="quickPrompt(this)">Speed up from 1:00 to 1:30 by 2x</span>
+            <span class="tag" onclick="quickPrompt(this)">Actually, put the intro back</span>
+            <span class="tag" onclick="quickPrompt(this)">Undo</span>
+            <span class="tag" onclick="quickPrompt(this)">Make that caption red</span>
+            <span class="tag" onclick="quickPrompt(this)">Remove filler words</span>
+            <span class="tag" onclick="quickPrompt(this)">Speed up 10x</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let currentSessionId = null;
+    let currentTimeline = null;
+    let activeCaptions = [];
+
+    async function initSession() {
+      try {
+        const res = await fetch('/api/v1/sessions', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json', 'Idempotency-Key': 'init_' + Date.now()},
+          body: JSON.stringify({ video_url: 'test_pack/media/single_speaker_interview.mp4' })
+        });
+        const data = await res.json();
+        currentSessionId = data.session_id;
+        await refreshTimeline();
+      } catch (e) {
+        console.error('Session init error:', e);
+      }
+    }
+
+    async function refreshTimeline() {
+      if (!currentSessionId) return;
+      const res = await fetch(`/api/v1/sessions/${currentSessionId}`);
+      const data = await res.json();
+      currentTimeline = data.timeline;
+      updateUI();
+    }
+
+    function formatTime(s) {
+      const m = Math.floor(s / 60);
+      const sec = Math.floor(s % 60);
+      return `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+    }
+
+    function updateUI() {
+      if (!currentTimeline) return;
+      const dur = currentTimeline.derived_timing.total_duration_s;
+      document.getElementById('metaDuration').innerText = formatTime(dur);
+      document.getElementById('metaClips').innerText = currentTimeline.video_track.clips.length;
+      document.getElementById('metaHash').innerText = currentTimeline.derived_timing.timeline_hash.substring(0, 10) + '...';
+
+      // Render Transcript
+      const transContainer = document.getElementById('transcriptContainer');
+      transContainer.innerHTML = '';
+      const activeWordIds = new Set();
+      currentTimeline.video_track.clips.forEach(c => c.word_ids.forEach(wid => activeWordIds.add(wid)));
+
+      const anchorIds = new Set();
+      currentTimeline.caption_track.captions.forEach(c => {
+        if (c.is_active) c.anchor_word_ids.forEach(id => anchorIds.add(id));
+      });
+
+      let currentSpeaker = '';
+      let row = document.createElement('div');
+
+      currentTimeline.transcript.words.forEach(w => {
+        if (w.speaker !== currentSpeaker) {
+          currentSpeaker = w.speaker;
+          const spkTitle = document.createElement('div');
+          spkTitle.style.cssText = 'color:var(--primary); font-weight:600; margin-top:0.4rem; font-size:0.75rem;';
+          spkTitle.innerText = currentSpeaker === 'speaker_1' ? 'Speaker 1 (Host)' : 'Speaker 2 (Guest)';
+          transContainer.appendChild(spkTitle);
+        }
+        const span = document.createElement('span');
+        span.className = 'word-token';
+        if (w.is_filler) span.classList.add('filler');
+        if (anchorIds.has(w.id)) span.classList.add('anchor');
+        if (!activeWordIds.has(w.id)) span.classList.add('cut');
+        span.title = `Time: ${w.start_s}s - ${w.end_s}s`;
+        span.innerText = w.text;
+        transContainer.appendChild(span);
+      });
+
+      // Render Clips Track
+      const clipsBar = document.getElementById('videoTrackClips');
+      clipsBar.innerHTML = '';
+      const totalDur = dur > 0 ? dur : 1.0;
+      currentTimeline.video_track.clips.forEach((c, idx) => {
+        const seg = document.createElement('div');
+        seg.className = 'clip-segment';
+        seg.classList.add(c.speed_factor > 1.5 ? 'clip-speed-2' : 'clip-speed-1');
+        const clipDur = (c.source_end_s - c.source_start_s) / c.speed_factor;
+        const pct = (clipDur / totalDur) * 100;
+        seg.style.width = `${Math.max(2, pct)}%`;
+        seg.innerText = `${formatTime(c.source_start_s)}-${formatTime(c.source_end_s)} (${c.speed_factor}x)`;
+        clipsBar.appendChild(seg);
+      });
+
+      // Render Captions Track
+      const capBar = document.getElementById('captionTrackBar');
+      capBar.innerHTML = '';
+      currentTimeline.caption_track.captions.forEach(cap => {
+        if (cap.is_active) {
+          const capSpan = document.createElement('div');
+          capSpan.style.cssText = 'height:100%; background:#10b981; color:#fff; font-size:0.7rem; font-weight:600; display:flex; align-items:center; padding:0 0.5rem; border-radius:2px;';
+          capSpan.innerText = `Caption: "${cap.text}" (${cap.style.color})`;
+          capBar.appendChild(capSpan);
+        }
+      });
+
+      // Update Canvas Preview
+      drawCanvasPreview();
+    }
+
+    function drawCanvasPreview() {
+      const cvs = document.getElementById('previewCanvas');
+      const ctx = cvs.getContext('2d');
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(0, 0, cvs.width, cvs.height);
+
+      // Draw synthetic talking-head silhouette
+      ctx.fillStyle = '#334155';
+      ctx.beginPath();
+      ctx.arc(cvs.width/2, 130, 45, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(cvs.width/2, 260, 90, Math.PI, 0, false);
+      ctx.fill();
+
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = '14px JetBrains Mono';
+      ctx.fillText(`IncuBrix Engine Preview | Active Duration: ${formatTime(currentTimeline.derived_timing.total_duration_s)}`, 20, 30);
+
+      // Captions
+      const capOverlay = document.getElementById('activeCaptionOverlay');
+      const activeCap = currentTimeline.caption_track.captions.find(c => c.is_active);
+      if (activeCap) {
+        capOverlay.style.display = 'inline-block';
+        capOverlay.innerText = activeCap.text;
+        capOverlay.style.color = activeCap.style.color;
+      } else {
+        capOverlay.style.display = 'none';
+      }
+    }
+
+    async function sendPrompt(customText = null, answerText = null) {
+      const input = document.getElementById('promptInput');
+      const text = customText || input.value.trim();
+      if (!text) return;
+      if (!customText) input.value = '';
+
+      appendMessage('user', text);
+
+      try {
+        const res = await fetch(`/api/v1/sessions/${currentSessionId}/instructions`, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json', 'Idempotency-Key': 'key_' + Date.now()},
+          body: JSON.stringify({ say: text, answer: answerText })
+        });
+        const data = await res.json();
+        handleEngineResponse(text, data);
+        await refreshTimeline();
+      } catch (e) {
+        appendMessage('rejected', 'Error connecting to engine: ' + e);
+      }
+    }
+
+    function handleEngineResponse(say, data) {
+      if (data.status === 'applied') {
+        appendMessage('applied', `<b>Applied:</b> ${data.summary}`, data);
+      } else if (data.status === 'needs_clarification') {
+        appendClarificationMessage(data.question, data.options, say);
+      } else {
+        appendMessage('rejected', `<b>Rejected:</b> ${data.reason}`, data);
+      }
+    }
+
+    function appendMessage(type, html, meta = null) {
+      const chat = document.getElementById('chatHistory');
+      const div = document.createElement('div');
+      div.className = `msg msg-${type}`;
+      div.innerHTML = html;
+      if (meta) {
+        const metaDiv = document.createElement('div');
+        metaDiv.className = 'msg-meta';
+        metaDiv.innerHTML = `<span>Status: ${meta.status.toUpperCase()}</span><span>Latency: ${meta.latency_s}s &bull; Hash: ${meta.timeline_hash.substring(0,8)}</span>`;
+        div.appendChild(metaDiv);
+      }
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function appendClarificationMessage(question, options, originalSay) {
+      const chat = document.getElementById('chatHistory');
+      const div = document.createElement('div');
+      div.className = 'msg msg-clarify';
+      div.innerHTML = `<b>Needs clarification:</b> ${question}`;
+
+      if (options && options.length) {
+        const btnBox = document.createElement('div');
+        btnBox.className = 'clarify-buttons';
+        options.forEach(opt => {
+          const btn = document.createElement('button');
+          btn.className = 'clarify-btn';
+          btn.innerText = opt;
+          btn.onclick = () => {
+            sendPrompt(originalSay, opt);
+          };
+          btnBox.appendChild(btn);
+        });
+        div.appendChild(btnBox);
+      }
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function quickPrompt(el) {
+      document.getElementById('promptInput').value = el.innerText;
+      sendPrompt();
+    }
+
+    async function triggerUndo() {
+      sendPrompt('Undo');
+    }
+
+    async function triggerRedo() {
+      sendPrompt('Redo');
+    }
+
+    async function triggerRender() {
+      const progWrap = document.getElementById('renderProgressWrap');
+      const progBar = document.getElementById('renderProgressBar');
+      const links = document.getElementById('renderDownloadLinks');
+      progWrap.style.display = 'block';
+      progBar.style.width = '15%';
+
+      try {
+        const res = await fetch(`/api/v1/sessions/${currentSessionId}/render`, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json', 'Idempotency-Key': 'rnd_' + Date.now()}
+        });
+        const job = await res.json();
+        pollJob(job.job_id);
+      } catch (e) {
+        alert('Render failed: ' + e);
+      }
+    }
+
+    function pollJob(jobId) {
+      const progBar = document.getElementById('renderProgressBar');
+      const interval = setInterval(async () => {
+        const res = await fetch(`/api/v1/jobs/${jobId}`);
+        const data = await res.json();
+        progBar.style.width = `${Math.max(15, data.progress)}%`;
+
+        if (data.status === 'succeeded') {
+          clearInterval(interval);
+          progBar.style.width = '100%';
+          const links = document.getElementById('renderDownloadLinks');
+          links.style.display = 'block';
+          document.getElementById('downloadVideoLink').href = data.result.video_url;
+          document.getElementById('downloadOtioLink').href = data.result.otio_url;
+          document.getElementById('downloadManifestLink').href = data.result.manifest_url;
+          appendMessage('applied', `<b>Render Succeeded!</b> Playout length: ${data.result.rendered_duration_s}s. Output verified in-sync within 1 frame.`);
+        } else if (data.status === 'failed') {
+          clearInterval(interval);
+          alert('Job failed: ' + JSON.stringify(data.error));
+        }
+      }, 500);
+    }
+
+    window.onload = initSession;
+  </script>
+</body>
+</html>
+

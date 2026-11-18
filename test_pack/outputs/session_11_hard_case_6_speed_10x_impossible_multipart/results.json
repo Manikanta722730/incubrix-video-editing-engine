@@ -1,0 +1,55 @@
+{
+  "session_file": "test_pack/sessions\\session_11_hard_case_6_speed_10x_impossible_multipart.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 3,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Speed up 10x",
+      "status": "rejected",
+      "operations": [],
+      "summary": "",
+      "question": null,
+      "options": null,
+      "reason": "Speed factor 10.0x exceeds maximum supported limit (4.0x).",
+      "timeline_hash": "403fd8087a3492ab5538604b36c12539f1203733e3b2971f9af09c1866270d33",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "Cut everything",
+      "status": "rejected",
+      "operations": [],
+      "summary": "",
+      "question": null,
+      "options": null,
+      "reason": "Cannot cut entire video: resulting timeline would be empty.",
+      "timeline_hash": "403fd8087a3492ab5538604b36c12539f1203733e3b2971f9af09c1866270d33",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "Cut the first 10 seconds and speed up 10x",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Partially applied (cut_range). Some parts could not be applied: Speed factor 10.0x exceeds maximum supported limit (4.0x).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "79bb94ca4936e18dbcd81fa0a58684334866c192e694589dc3ec4ed30ae224a2",
+      "duration_s": 229.95,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 229.95,
+  "final_timeline_hash": "79bb94ca4936e18dbcd81fa0a58684334866c192e694589dc3ec4ed30ae224a2"
+}

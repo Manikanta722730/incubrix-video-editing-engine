@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-11-18T12:55:47Z",
+  "total_sessions": 1,
+  "succeeded": 1,
+  "failed": 0,
+  "total_elapsed_s": 0.101,
+  "sessions": [
+    {
+      "file": "test_pack/sessions/session_01_worked_example.yaml",
+      "status": "succeeded",
+      "total_steps": 8,
+      "final_timeline_hash": "718a17f01cf5900e4955cb64b4d6c9caef8936688386cf0319076e4e0234621c",
+      "final_duration_s": 190.2,
+      "elapsed_s": 0.0971
+    }
+  ]
+}

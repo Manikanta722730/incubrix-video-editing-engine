@@ -1,0 +1,27 @@
+{
+  "session_file": "test_pack/sessions\\session_14_semantic_search_cost_pricing.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 1,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Remove the part about pricing",
+      "status": "applied",
+      "operations": [
+        "cut_topic"
+      ],
+      "summary": "Removed pricing section (01:03 to 01:09.800).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "321b518462425b39a8c28d4751b2ea58bc1a68d8b9938564e645f07e140a6eff",
+      "duration_s": 233.2,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 233.2,
+  "final_timeline_hash": "321b518462425b39a8c28d4751b2ea58bc1a68d8b9938564e645f07e140a6eff"
+}

@@ -1,0 +1,59 @@
+{
+  "session_file": "test_pack/sessions\\session_07_hard_case_2_reorder_mute_filler.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 3,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Bleep the word pricing",
+      "status": "applied",
+      "operations": [
+        "bleep_word"
+      ],
+      "summary": "Bleeped 3 instance(s) of word 'pricing'.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "e40c7b489d8a661644562da870678a01847594443050de4be43e513b6c9408c3",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "Remove filler words",
+      "status": "applied",
+      "operations": [
+        "remove_fillers"
+      ],
+      "summary": "Removed 2 filler words (uh, um). New duration: 03:59.300.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "5f5f3a8a3b7ad9642c3dd7f96921f681d8247b785cb80949b24c772520d24f13",
+      "duration_s": 239.3,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "Cut the first 30 seconds",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 29.3s (00:00 to 00:30). Duration changed from 03:59.300 to 03:30. Using policy 'original_media_time': input 00:00-00:30 maps to current timeline 00:00 to 00:29.300.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "f0b0e0e9fa81a0e9fd95bb49921ccb50908b3ff7328448a1a175fa8b30ef3647",
+      "duration_s": 210.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0018
+    }
+  ],
+  "final_duration_s": 210.0,
+  "final_timeline_hash": "f0b0e0e9fa81a0e9fd95bb49921ccb50908b3ff7328448a1a175fa8b30ef3647"
+}

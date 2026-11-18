@@ -1,0 +1,8 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: 'Hard Case 3: ''Remove 0:30-0:40'' sent twice, ''add caption at 5:00''
+  on shorter video, natural times'
+steps:
+- say: Remove 0:30-0:40
+- say: Remove 0:30-0:40
+- say: Add a caption at 5:00
+- say: Cut the first 80 seconds

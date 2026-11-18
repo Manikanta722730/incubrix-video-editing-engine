@@ -1,0 +1,5 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: Removes silences longer than 0.7s and snaps boundaries
+steps:
+- say: Remove silences longer than 0.7 seconds
+- say: Undo

@@ -1,0 +1,75 @@
+{
+  "session_file": "test_pack/sessions\\session_06_hard_case_1_cut_restore_caption.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 4,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Add a caption 'Welcome!' when I say welcome to the channel",
+      "status": "applied",
+      "operations": [
+        "add_caption"
+      ],
+      "summary": "Caption 'Welcome!' attached to 4 words ('welcome to the channel') at original time 00:42-00:44. Currently plays at 00:42-00:44 on active timeline.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "620caf47d0d3ce4076fe639d87549bf92e57c0073fe1bca4ec2d15dd9daccd23",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.001
+    },
+    {
+      "step_index": 2,
+      "say": "Cut the first 30 seconds",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 30.0s (00:00 to 00:30). Duration changed from 04:00 to 03:30. Using policy 'original_media_time': input 00:00-00:30 maps to current timeline 00:00 to 00:30. Caption 'Welcome!' now plays at 00:12-00:14.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "c3bcd882d53fa7db29c227e468be257d9ff0e013f52a3cb6d496a3d997cbd4f8",
+      "duration_s": 210.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "Actually, put the intro back",
+      "status": "applied",
+      "operations": [
+        "restore_edit"
+      ],
+      "summary": "Restored range 0.0s-30.0s from edit 'Cut the first 30 seconds'.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "8ff2d7c87507e7c6f0dbd8ff24da20f177f3151161a298773b734503e318ce41",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 4,
+      "say": "Make that caption red",
+      "status": "applied",
+      "operations": [
+        "style_caption"
+      ],
+      "summary": "Applied 'red' to caption 'Welcome!', the only one that exists.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "b214fba313ac2fb52d475a63fbf1b75cc5247f68945f0bd976f7a82def737747",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 240.0,
+  "final_timeline_hash": "b214fba313ac2fb52d475a63fbf1b75cc5247f68945f0bd976f7a82def737747"
+}

@@ -1,0 +1,6 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: Removes ums, uhs, and filler words contextually
+steps:
+- say: Remove filler words
+- say: Undo
+- say: Cut out the ums and uhs

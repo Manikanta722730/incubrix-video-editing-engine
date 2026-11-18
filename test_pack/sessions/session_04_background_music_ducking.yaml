@@ -1,0 +1,6 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: Adds background music track with automatic speech ducking (-18dB)
+steps:
+- say: Add background music that automatically gets quieter under speech
+- say: Cut the first 30 seconds
+- say: render

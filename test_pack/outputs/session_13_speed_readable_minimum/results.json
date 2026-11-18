@@ -1,0 +1,59 @@
+{
+  "session_file": "test_pack/sessions\\session_13_speed_readable_minimum.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 3,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Add a caption 'Welcome!' when I say welcome to the channel",
+      "status": "applied",
+      "operations": [
+        "add_caption"
+      ],
+      "summary": "Caption 'Welcome!' attached to 4 words ('welcome to the channel') at original time 00:42-00:44. Currently plays at 00:42-00:44 on active timeline.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "7d1fbb0bebb2695396bae79b0fbba78255485987c894855af968741e150abcb5",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "Speed up from 0:40 to 0:50 by 3x",
+      "status": "applied",
+      "operations": [
+        "speed_range"
+      ],
+      "summary": "Applied 3.0x speed from 00:40 to 00:50. Duration updated to 03:53.333. Using policy 'original_media_time': input 00:40-00:50 maps to current timeline 00:40 to 00:50.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "4382623c16f468b54594aa3011f0a3e0ac1414372a368e9d693f67c29b77df69",
+      "duration_s": 233.3333,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "render",
+      "status": "applied",
+      "operations": [
+        "render"
+      ],
+      "summary": "Audio and video in sync within 1 frame. Render length matches timeline (03:53.333).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "4382623c16f468b54594aa3011f0a3e0ac1414372a368e9d693f67c29b77df69",
+      "duration_s": 233.3333,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 233.3333,
+  "final_timeline_hash": "4382623c16f468b54594aa3011f0a3e0ac1414372a368e9d693f67c29b77df69"
+}

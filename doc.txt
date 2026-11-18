@@ -1,0 +1,40 @@
+- I have read the brief and Submission Form for my chosen problem statement (and Growth option, if applicable).
+- This is an individual assessment due by Monday, 23 Nov 2026, at 11:59 PM IST
+- I will complete only the problem statement (and Growth option) I chose here, unless IncuBrix approves a change in writing.I may use any AI tools, models, APIs, services or compute, and I will disclose all of them. 
+- I am not required to pay for anything, and IncuBrix will not reimburse costs unless agreed in writing beforehand.
+- Everything in my solution, and everything it produces, will be licensed for commercial use.
+- I will personally understand, and be able to explain and modify, all the code and work I submit.
+- I will use only owned, public, consented or properly licensed data and media, and will get explicit consent before using any identifiable person's voice, image or likeness.
+-I will not contact real prospects, communities or partners, or publish as IncuBrix, except where my brief allows it.
+- I will not fabricate code, outputs, consent, evidence, metrics or results.IncuBrix may inspect my repository, rerun my solution and hold a live coding, modification or debugging session.
+-My reported results are provisional; IncuBrix's validated results are final.
+- Completing the assessment does not guarantee an interview, selection or offer.
+
+
+
+
+
+
+
+
+These conditions apply only if the candidate is selected and accepts and signs the IncuBrix offer.
+
+- I have read and understood the employment pathway explained in the briefing deck and JD. 
+- I understand that selected candidates enter a full-time employment pathway with a 6–10-month probation/internship-equivalent period. 
+- I understand that the probation compensation is ₹20,000 per month. 
+- I understand that the confirmed CTC takes effect from 1 July 2027, subject to successful probation and completion of Amritha’s academic requirements. 
+- I understand that the Software Engineer CTC tiers are ₹5 LPA, ₹8 LPA or ₹12 LPA. 
+- I understand that the Associate Tech Partner CTC tiers are ₹10 LPA, ₹15 LPA or ₹20 LPA. 
+- I understand that the final tier, CTC structure and conditions will be stated in the formal offer. 
+- I understand that joining may be immediate or in December 2026 or in early January 2027, based on IncuBrix’s business requirements. 
+- I understand that the initial work location is Tiruchirappalli and that I should be open to a future move to Bengaluru. 
+- I understand that role-relevant medical, academic or other clearance requirements may apply. 
+- If I accept and sign the offer, I agree to stop participating in further on-campus recruitment processes, subject to Amrita’s placement rules. 
+- If I accept and sign the offer, I commit to completing the internship/final-semester/probation period required by Amrita with IncuBrix through at least 30 June 2027.
+-  During this committed period, I will not accept or join another organisation unless permitted in writing by IncuBrix and Amrita and allowed under the formal offer and applicable law. 
+- I understand that all final employment rights and obligations will be governed by the written offer and employment agreement.
+
+
+
+
+

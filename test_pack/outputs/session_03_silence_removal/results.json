@@ -1,0 +1,43 @@
+{
+  "session_file": "test_pack/sessions\\session_03_silence_removal.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 2,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Remove silences longer than 0.7 seconds",
+      "status": "applied",
+      "operations": [
+        "remove_silence"
+      ],
+      "summary": "Removed 17 silences (> 0.7s). New duration: 00:43.800.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "cbddd5165a47bd91b2f8063a96f9cf7ef4ae04ec00da8b3aad31e4244fe574f8",
+      "duration_s": 43.8,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "Undo",
+      "status": "applied",
+      "operations": [
+        "undo"
+      ],
+      "summary": "Reversed step. Reversed step: 'Remove silences longer than 0.7 seconds' (remove_silence). Duration now 04:00.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "403fd8087a3492ab5538604b36c12539f1203733e3b2971f9af09c1866270d33",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 240.0,
+  "final_timeline_hash": "403fd8087a3492ab5538604b36c12539f1203733e3b2971f9af09c1866270d33"
+}

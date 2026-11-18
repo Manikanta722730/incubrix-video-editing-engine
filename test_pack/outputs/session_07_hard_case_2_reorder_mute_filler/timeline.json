@@ -1,0 +1,1301 @@
+{
+  "version": "1.0.0",
+  "timeline_id": "bdbf6abf-d1b2-4d0b-9a09-6627d4ef38d5",
+  "source_media": {
+    "source_id": "src_001",
+    "file_name": "single_speaker_interview.mp4",
+    "duration_s": 240.0,
+    "fps": 30.0,
+    "width": 640,
+    "height": 360,
+    "has_audio": true,
+    "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+    "storage_url": "test_pack/media/single_speaker_interview.mp4"
+  },
+  "transcript": {
+    "words": [
+      {
+        "id": "w_000",
+        "text": "hey",
+        "start_s": 1.0,
+        "end_s": 1.4,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_001",
+        "text": "everyone",
+        "start_s": 1.5,
+        "end_s": 2.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_002",
+        "text": "in",
+        "start_s": 2.2,
+        "end_s": 2.4,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_003",
+        "text": "this",
+        "start_s": 2.5,
+        "end_s": 2.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_004",
+        "text": "tutorial",
+        "start_s": 2.9,
+        "end_s": 3.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_005",
+        "text": "we",
+        "start_s": 4.0,
+        "end_s": 4.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_006",
+        "text": "will",
+        "start_s": 4.3,
+        "end_s": 4.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_007",
+        "text": "learn",
+        "start_s": 4.6,
+        "end_s": 5.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_008",
+        "text": "video",
+        "start_s": 5.2,
+        "end_s": 5.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_009",
+        "text": "editing",
+        "start_s": 5.7,
+        "end_s": 6.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_010",
+        "text": "with",
+        "start_s": 6.3,
+        "end_s": 6.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_011",
+        "text": "ai",
+        "start_s": 6.7,
+        "end_s": 7.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_012",
+        "text": "um",
+        "start_s": 8.0,
+        "end_s": 8.4,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": true,
+        "low_confidence": false
+      },
+      {
+        "id": "w_013",
+        "text": "first",
+        "start_s": 9.0,
+        "end_s": 9.4,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_014",
+        "text": "let",
+        "start_s": 9.5,
+        "end_s": 9.7,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_015",
+        "text": "us",
+        "start_s": 9.8,
+        "end_s": 10.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_016",
+        "text": "review",
+        "start_s": 10.1,
+        "end_s": 10.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_017",
+        "text": "the",
+        "start_s": 10.6,
+        "end_s": 10.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_018",
+        "text": "basics",
+        "start_s": 10.9,
+        "end_s": 11.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_019",
+        "text": "uh",
+        "start_s": 13.0,
+        "end_s": 13.3,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": true,
+        "low_confidence": false
+      },
+      {
+        "id": "w_020",
+        "text": "this",
+        "start_s": 14.0,
+        "end_s": 14.3,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_021",
+        "text": "intro",
+        "start_s": 14.4,
+        "end_s": 14.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_022",
+        "text": "covers",
+        "start_s": 14.9,
+        "end_s": 15.4,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_023",
+        "text": "everything",
+        "start_s": 15.5,
+        "end_s": 16.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_024",
+        "text": "about",
+        "start_s": 16.1,
+        "end_s": 16.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_025",
+        "text": "timeline",
+        "start_s": 16.6,
+        "end_s": 17.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_026",
+        "text": "manipulation",
+        "start_s": 17.3,
+        "end_s": 18.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_027",
+        "text": "and",
+        "start_s": 19.0,
+        "end_s": 19.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_028",
+        "text": "silence",
+        "start_s": 19.3,
+        "end_s": 19.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_029",
+        "text": "detection",
+        "start_s": 19.9,
+        "end_s": 20.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_030",
+        "text": "welcome",
+        "start_s": 42.0,
+        "end_s": 42.5,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_031",
+        "text": "to",
+        "start_s": 42.6,
+        "end_s": 42.8,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_032",
+        "text": "the",
+        "start_s": 42.9,
+        "end_s": 43.1,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_033",
+        "text": "channel",
+        "start_s": 43.2,
+        "end_s": 44.0,
+        "speaker": "speaker_1",
+        "confidence": 0.99,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_034",
+        "text": "now",
+        "start_s": 60.0,
+        "end_s": 60.4,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_035",
+        "text": "our",
+        "start_s": 64.5,
+        "end_s": 64.8,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_036",
+        "text": "pricing",
+        "start_s": 65.0,
+        "end_s": 65.6,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_037",
+        "text": "starts",
+        "start_s": 65.7,
+        "end_s": 66.2,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_038",
+        "text": "at",
+        "start_s": 66.3,
+        "end_s": 66.5,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_039",
+        "text": "ten",
+        "start_s": 66.6,
+        "end_s": 67.0,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_040",
+        "text": "dollars",
+        "start_s": 67.1,
+        "end_s": 67.8,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_041",
+        "text": "per",
+        "start_s": 67.9,
+        "end_s": 68.1,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_042",
+        "text": "month",
+        "start_s": 68.2,
+        "end_s": 68.7,
+        "speaker": "speaker_1",
+        "confidence": 0.97,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_043",
+        "text": "here",
+        "start_s": 75.0,
+        "end_s": 75.4,
+        "speaker": "speaker_1",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_044",
+        "text": "is",
+        "start_s": 75.5,
+        "end_s": 75.7,
+        "speaker": "speaker_1",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_045",
+        "text": "the",
+        "start_s": 75.8,
+        "end_s": 76.0,
+        "speaker": "speaker_1",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_046",
+        "text": "fast",
+        "start_s": 76.1,
+        "end_s": 76.5,
+        "speaker": "speaker_1",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_047",
+        "text": "demonstration",
+        "start_s": 76.6,
+        "end_s": 77.4,
+        "speaker": "speaker_1",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_048",
+        "text": "of",
+        "start_s": 77.5,
+        "end_s": 77.7,
+        "speaker": "speaker_1",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_049",
+        "text": "the",
+        "start_s": 77.8,
+        "end_s": 78.0,
+        "speaker": "speaker_1",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_050",
+        "text": "engine",
+        "start_s": 78.1,
+        "end_s": 78.7,
+        "speaker": "speaker_1",
+        "confidence": 0.96,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_051",
+        "text": "secondly",
+        "start_s": 158.0,
+        "end_s": 158.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_052",
+        "text": "regarding",
+        "start_s": 159.0,
+        "end_s": 159.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_053",
+        "text": "pricing",
+        "start_s": 160.0,
+        "end_s": 160.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_054",
+        "text": "options",
+        "start_s": 160.7,
+        "end_s": 161.3,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_055",
+        "text": "for",
+        "start_s": 161.4,
+        "end_s": 161.6,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_056",
+        "text": "teams",
+        "start_s": 161.7,
+        "end_s": 162.3,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_057",
+        "text": "we",
+        "start_s": 162.5,
+        "end_s": 162.7,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_058",
+        "text": "offer",
+        "start_s": 162.8,
+        "end_s": 163.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_059",
+        "text": "discounts",
+        "start_s": 163.3,
+        "end_s": 164.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_060",
+        "text": "finally",
+        "start_s": 193.0,
+        "end_s": 193.6,
+        "speaker": "speaker_1",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_061",
+        "text": "the",
+        "start_s": 194.5,
+        "end_s": 194.8,
+        "speaker": "speaker_1",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_062",
+        "text": "enterprise",
+        "start_s": 194.9,
+        "end_s": 195.5,
+        "speaker": "speaker_1",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_063",
+        "text": "pricing",
+        "start_s": 195.6,
+        "end_s": 196.2,
+        "speaker": "speaker_1",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_064",
+        "text": "tier",
+        "start_s": 196.3,
+        "end_s": 196.8,
+        "speaker": "speaker_1",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_065",
+        "text": "has",
+        "start_s": 196.9,
+        "end_s": 197.1,
+        "speaker": "speaker_1",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_066",
+        "text": "dedicated",
+        "start_s": 197.2,
+        "end_s": 197.8,
+        "speaker": "speaker_1",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_067",
+        "text": "support",
+        "start_s": 197.9,
+        "end_s": 198.5,
+        "speaker": "speaker_1",
+        "confidence": 0.95,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_068",
+        "text": "thanks",
+        "start_s": 210.0,
+        "end_s": 210.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_069",
+        "text": "for",
+        "start_s": 210.6,
+        "end_s": 210.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_070",
+        "text": "watching",
+        "start_s": 210.9,
+        "end_s": 211.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_071",
+        "text": "thanks",
+        "start_s": 215.0,
+        "end_s": 215.4,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_072",
+        "text": "to",
+        "start_s": 215.5,
+        "end_s": 215.7,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_073",
+        "text": "our",
+        "start_s": 215.8,
+        "end_s": 216.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_074",
+        "text": "sponsor",
+        "start_s": 216.1,
+        "end_s": 216.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_075",
+        "text": "thanks",
+        "start_s": 220.0,
+        "end_s": 220.4,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_076",
+        "text": "everyone",
+        "start_s": 220.5,
+        "end_s": 221.0,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_077",
+        "text": "and",
+        "start_s": 225.0,
+        "end_s": 225.2,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_078",
+        "text": "special",
+        "start_s": 225.3,
+        "end_s": 225.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_079",
+        "text": "thanks",
+        "start_s": 226.0,
+        "end_s": 226.5,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      },
+      {
+        "id": "w_080",
+        "text": "goodbye",
+        "start_s": 228.0,
+        "end_s": 228.8,
+        "speaker": "speaker_1",
+        "confidence": 0.98,
+        "is_filler": false,
+        "low_confidence": false
+      }
+    ],
+    "speakers": [
+      "speaker_1"
+    ],
+    "language": "en"
+  },
+  "video_track": {
+    "clips": [
+      {
+        "clip_id": "clip_5efee7a6",
+        "source_start_s": 30.0,
+        "source_end_s": 240.0,
+        "speed_factor": 1.0,
+        "word_ids": [
+          "w_030",
+          "w_031",
+          "w_032",
+          "w_033",
+          "w_034",
+          "w_035",
+          "w_036",
+          "w_037",
+          "w_038",
+          "w_039",
+          "w_040",
+          "w_041",
+          "w_042",
+          "w_043",
+          "w_044",
+          "w_045",
+          "w_046",
+          "w_047",
+          "w_048",
+          "w_049",
+          "w_050",
+          "w_051",
+          "w_052",
+          "w_053",
+          "w_054",
+          "w_055",
+          "w_056",
+          "w_057",
+          "w_058",
+          "w_059",
+          "w_060",
+          "w_061",
+          "w_062",
+          "w_063",
+          "w_064",
+          "w_065",
+          "w_066",
+          "w_067",
+          "w_068",
+          "w_069",
+          "w_070",
+          "w_071",
+          "w_072",
+          "w_073",
+          "w_074",
+          "w_075",
+          "w_076",
+          "w_077",
+          "w_078",
+          "w_079",
+          "w_080"
+        ],
+        "is_muted": false
+      }
+    ]
+  },
+  "audio_track": {
+    "ducking_enabled": false,
+    "ducking_db": -18.0,
+    "background_music": null,
+    "bleeps": [
+      {
+        "word_id": "w_036",
+        "frequency_hz": 1000
+      },
+      {
+        "word_id": "w_053",
+        "frequency_hz": 1000
+      },
+      {
+        "word_id": "w_063",
+        "frequency_hz": 1000
+      }
+    ]
+  },
+  "caption_track": {
+    "captions": []
+  },
+  "history_steps": [
+    {
+      "step_id": "step_64427e46",
+      "op_type": "bleep_word",
+      "instruction_text": "Bleep the word pricing",
+      "params": {
+        "word": "pricing",
+        "count": 3
+      },
+      "timestamp": "2026-11-18T10:55:51.717992+00:00",
+      "snapshot_data": {
+        "video_track": [
+          {
+            "clip_id": "clip_000",
+            "source_start_s": 0.0,
+            "source_end_s": 240.0,
+            "speed_factor": 1.0,
+            "word_ids": [
+              "w_000",
+              "w_001",
+              "w_002",
+              "w_003",
+              "w_004",
+              "w_005",
+              "w_006",
+              "w_007",
+              "w_008",
+              "w_009",
+              "w_010",
+              "w_011",
+              "w_012",
+              "w_013",
+              "w_014",
+              "w_015",
+              "w_016",
+              "w_017",
+              "w_018",
+              "w_019",
+              "w_020",
+              "w_021",
+              "w_022",
+              "w_023",
+              "w_024",
+              "w_025",
+              "w_026",
+              "w_027",
+              "w_028",
+              "w_029",
+              "w_030",
+              "w_031",
+              "w_032",
+              "w_033",
+              "w_034",
+              "w_035",
+              "w_036",
+              "w_037",
+              "w_038",
+              "w_039",
+              "w_040",
+              "w_041",
+              "w_042",
+              "w_043",
+              "w_044",
+              "w_045",
+              "w_046",
+              "w_047",
+              "w_048",
+              "w_049",
+              "w_050",
+              "w_051",
+              "w_052",
+              "w_053",
+              "w_054",
+              "w_055",
+              "w_056",
+              "w_057",
+              "w_058",
+              "w_059",
+              "w_060",
+              "w_061",
+              "w_062",
+              "w_063",
+              "w_064",
+              "w_065",
+              "w_066",
+              "w_067",
+              "w_068",
+              "w_069",
+              "w_070",
+              "w_071",
+              "w_072",
+              "w_073",
+              "w_074",
+              "w_075",
+              "w_076",
+              "w_077",
+              "w_078",
+              "w_079",
+              "w_080"
+            ],
+            "is_muted": false
+          }
+        ],
+        "audio_track": {
+          "ducking_enabled": false,
+          "ducking_db": -18.0,
+          "background_music": null,
+          "bleeps": []
+        },
+        "caption_track": []
+      }
+    },
+    {
+      "step_id": "step_ce61ad2c",
+      "op_type": "remove_fillers",
+      "instruction_text": "Remove filler words",
+      "params": {
+        "filler_count": 2
+      },
+      "timestamp": "2026-11-18T10:55:51.717992+00:00",
+      "snapshot_data": {
+        "video_track": [
+          {
+            "clip_id": "clip_000",
+            "source_start_s": 0.0,
+            "source_end_s": 240.0,
+            "speed_factor": 1.0,
+            "word_ids": [
+              "w_000",
+              "w_001",
+              "w_002",
+              "w_003",
+              "w_004",
+              "w_005",
+              "w_006",
+              "w_007",
+              "w_008",
+              "w_009",
+              "w_010",
+              "w_011",
+              "w_012",
+              "w_013",
+              "w_014",
+              "w_015",
+              "w_016",
+              "w_017",
+              "w_018",
+              "w_019",
+              "w_020",
+              "w_021",
+              "w_022",
+              "w_023",
+              "w_024",
+              "w_025",
+              "w_026",
+              "w_027",
+              "w_028",
+              "w_029",
+              "w_030",
+              "w_031",
+              "w_032",
+              "w_033",
+              "w_034",
+              "w_035",
+              "w_036",
+              "w_037",
+              "w_038",
+              "w_039",
+              "w_040",
+              "w_041",
+              "w_042",
+              "w_043",
+              "w_044",
+              "w_045",
+              "w_046",
+              "w_047",
+              "w_048",
+              "w_049",
+              "w_050",
+              "w_051",
+              "w_052",
+              "w_053",
+              "w_054",
+              "w_055",
+              "w_056",
+              "w_057",
+              "w_058",
+              "w_059",
+              "w_060",
+              "w_061",
+              "w_062",
+              "w_063",
+              "w_064",
+              "w_065",
+              "w_066",
+              "w_067",
+              "w_068",
+              "w_069",
+              "w_070",
+              "w_071",
+              "w_072",
+              "w_073",
+              "w_074",
+              "w_075",
+              "w_076",
+              "w_077",
+              "w_078",
+              "w_079",
+              "w_080"
+            ],
+            "is_muted": false
+          }
+        ],
+        "audio_track": {
+          "ducking_enabled": false,
+          "ducking_db": -18.0,
+          "background_music": null,
+          "bleeps": [
+            {
+              "word_id": "w_036",
+              "frequency_hz": 1000
+            },
+            {
+              "word_id": "w_053",
+              "frequency_hz": 1000
+            },
+            {
+              "word_id": "w_063",
+              "frequency_hz": 1000
+            }
+          ]
+        },
+        "caption_track": []
+      }
+    },
+    {
+      "step_id": "step_34b74888",
+      "op_type": "cut_range",
+      "instruction_text": "Cut the first 30 seconds",
+      "params": {
+        "start_s": 0.0,
+        "end_s": 30.0
+      },
+      "timestamp": "2026-11-18T10:55:51.719788+00:00",
+      "snapshot_data": {
+        "video_track": [
+          {
+            "clip_id": "clip_9486a389",
+            "source_start_s": 0.0,
+            "source_end_s": 8.0,
+            "speed_factor": 1.0,
+            "word_ids": [
+              "w_000",
+              "w_001",
+              "w_002",
+              "w_003",
+              "w_004",
+              "w_005",
+              "w_006",
+              "w_007",
+              "w_008",
+              "w_009",
+              "w_010",
+              "w_011"
+            ],
+            "is_muted": false
+          },
+          {
+            "clip_id": "clip_e1535537",
+            "source_start_s": 8.4,
+            "source_end_s": 13.0,
+            "speed_factor": 1.0,
+            "word_ids": [
+              "w_013",
+              "w_014",
+              "w_015",
+              "w_016",
+              "w_017",
+              "w_018"
+            ],
+            "is_muted": false
+          },
+          {
+            "clip_id": "clip_3fb680cf",
+            "source_start_s": 13.3,
+            "source_end_s": 240.0,
+            "speed_factor": 1.0,
+            "word_ids": [
+              "w_020",
+              "w_021",
+              "w_022",
+              "w_023",
+              "w_024",
+              "w_025",
+              "w_026",
+              "w_027",
+              "w_028",
+              "w_029",
+              "w_030",
+              "w_031",
+              "w_032",
+              "w_033",
+              "w_034",
+              "w_035",
+              "w_036",
+              "w_037",
+              "w_038",
+              "w_039",
+              "w_040",
+              "w_041",
+              "w_042",
+              "w_043",
+              "w_044",
+              "w_045",
+              "w_046",
+              "w_047",
+              "w_048",
+              "w_049",
+              "w_050",
+              "w_051",
+              "w_052",
+              "w_053",
+              "w_054",
+              "w_055",
+              "w_056",
+              "w_057",
+              "w_058",
+              "w_059",
+              "w_060",
+              "w_061",
+              "w_062",
+              "w_063",
+              "w_064",
+              "w_065",
+              "w_066",
+              "w_067",
+              "w_068",
+              "w_069",
+              "w_070",
+              "w_071",
+              "w_072",
+              "w_073",
+              "w_074",
+              "w_075",
+              "w_076",
+              "w_077",
+              "w_078",
+              "w_079",
+              "w_080"
+            ],
+            "is_muted": false
+          }
+        ],
+        "audio_track": {
+          "ducking_enabled": false,
+          "ducking_db": -18.0,
+          "background_music": null,
+          "bleeps": [
+            {
+              "word_id": "w_036",
+              "frequency_hz": 1000
+            },
+            {
+              "word_id": "w_053",
+              "frequency_hz": 1000
+            },
+            {
+              "word_id": "w_063",
+              "frequency_hz": 1000
+            }
+          ]
+        },
+        "caption_track": []
+      }
+    }
+  ],
+  "undo_pointer": 2,
+  "derived_timing": {
+    "total_duration_s": 210.0,
+    "active_clip_count": 1,
+    "timeline_hash": "f0b0e0e9fa81a0e9fd95bb49921ccb50908b3ff7328448a1a175fa8b30ef3647"
+  }
+}

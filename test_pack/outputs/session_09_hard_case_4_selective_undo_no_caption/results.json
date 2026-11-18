@@ -1,0 +1,89 @@
+{
+  "session_file": "test_pack/sessions\\session_09_hard_case_4_selective_undo_no_caption.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 5,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Cut the first 30 seconds",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 30.0s (00:00 to 00:30). Duration changed from 04:00 to 03:30. Using policy 'original_media_time': input 00:00-00:30 maps to current timeline 00:00 to 00:30.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "75060179ee8e80dc4efe53abf896d512264ed704f3494917c34e6a300d049c7e",
+      "duration_s": 210.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "Add background music that automatically gets quieter under speech",
+      "status": "applied",
+      "operations": [
+        "add_background_music"
+      ],
+      "summary": "Added background music track with automatic ducking (-18dB under speech).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "eaddfbcde846dc72178b97d98b827d7ec50934d89f8dedc2fd10379de5b2ccc4",
+      "duration_s": 210.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "Cut 0:30-0:40",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 10.0s (00:30 to 00:40). Duration changed from 03:30 to 03:20. Using policy 'original_media_time': input 00:30-00:40 maps to current timeline 00:00 to 00:10.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "d9eb27bc35bfe1ce9f66037501d6859c10a4be57138cfca112b696171a0ba42e",
+      "duration_s": 200.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 4,
+      "say": "Undo the second-to-last cut but keep the music",
+      "status": "applied",
+      "operations": [
+        "selective_undo"
+      ],
+      "summary": "Restored range 0.0s-30.0s from edit 'Cut the first 30 seconds'. (Preserved background music track).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "89e5ec537ff558a44b9d616ce6969709c0e9287baf2bab7b4fd28e479e5e789e",
+      "duration_s": 230.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 5,
+      "say": "Make that caption bigger",
+      "status": "rejected",
+      "operations": [],
+      "summary": "",
+      "question": null,
+      "options": null,
+      "reason": "Cannot adjust caption style: no active caption exists on the timeline.",
+      "timeline_hash": "89e5ec537ff558a44b9d616ce6969709c0e9287baf2bab7b4fd28e479e5e789e",
+      "duration_s": 230.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 230.0,
+  "final_timeline_hash": "89e5ec537ff558a44b9d616ce6969709c0e9287baf2bab7b4fd28e479e5e789e"
+}

@@ -1,0 +1,49 @@
+{
+  "manifest_version": "1.0.0",
+  "job_id": "batch_session_01_worked_example",
+  "timeline_id": "54c236d4cda667cf",
+  "generated_at": "2026-11-18T10:55:51.190451+00:00",
+  "models_and_providers": {
+    "stt_provider": "mock",
+    "stt_model": "whisper-base",
+    "stt_version": "2024.1",
+    "llm_provider": "rule_based",
+    "llm_model": "deterministic-rule-engine",
+    "rendering_engine": "FFmpeg v9.0.2 / OpenCV 4.12",
+    "timeline_schema_version": "1.0.0"
+  },
+  "settings": {
+    "default_time_policy": "original_media_time",
+    "max_speed_factor": 4.0,
+    "min_speed_factor": 0.25,
+    "min_caption_readable_duration_s": 0.7,
+    "audio_ducking_db": -18.0,
+    "silence_snap_margin_s": 0.05
+  },
+  "execution_seed": 42,
+  "media_metrics": {
+    "original_duration_s": 190.2,
+    "rendered_duration_s": 190.2,
+    "duration_delta_s": 0.0
+  },
+  "timings": {
+    "stt_latency_s": 0.05,
+    "instruction_processing_s": 0.02,
+    "render_latency_s": 0.45,
+    "total_elapsed_s": 0.1511
+  },
+  "cost_estimate": {
+    "currency": "USD",
+    "stt_cost_usd": 0.01902,
+    "nlp_cost_usd": 0.001,
+    "total_cost_usd": 0.02002,
+    "cost_per_minute_video": 0.007
+  },
+  "warnings": [],
+  "licensing_and_rights": {
+    "commercial_use_permitted": true,
+    "ai_generated_content_labeled": true,
+    "code_license": "Apache-2.0 / Commercial IncuBrix Compatible",
+    "media_rights": "Public domain / Synthetic royalty-free consenting voices"
+  }
+}

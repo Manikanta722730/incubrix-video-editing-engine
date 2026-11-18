@@ -1,0 +1,9 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: Full end-to-end pipeline with multiple operations, undo, redo, and final
+  render
+steps:
+- say: Add a caption 'Welcome!' when I say welcome to the channel
+- say: Cut the first 30 seconds
+- say: Speed up from 1:00 to 1:30 by 2x
+- say: Add background music that automatically gets quieter under speech
+- say: render

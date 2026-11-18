@@ -1,0 +1,43 @@
+{
+  "session_file": "test_pack/sessions\\session_05_two_speaker_podcast.yaml",
+  "video": "test_pack/media/two_speaker_podcast.mp4",
+  "source_sha256": "31d0381ce3c595f1d865054c11819d268ed87d0e6b2829a96e0485d8676f7672",
+  "untouched_verified": true,
+  "total_steps": 2,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "remove everything the guest says about their old job",
+      "status": "applied",
+      "operations": [
+        "remove_speaker_topic"
+      ],
+      "summary": "Removed guest's lines about their old job (00:11.700 to 00:17.500). Host's lead-in question ('What did you do at your old job?') has been preserved. Would you also like to cut the host's question?",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "2189ef133b40c5ab7af964acf8bf98e8dc5dbcadb2bd8fb19ae7ffec8399872e",
+      "duration_s": 54.2,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "render",
+      "status": "applied",
+      "operations": [
+        "render"
+      ],
+      "summary": "Audio and video in sync within 1 frame. Render length matches timeline (00:54.200).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "2189ef133b40c5ab7af964acf8bf98e8dc5dbcadb2bd8fb19ae7ffec8399872e",
+      "duration_s": 54.2,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 54.2,
+  "final_timeline_hash": "2189ef133b40c5ab7af964acf8bf98e8dc5dbcadb2bd8fb19ae7ffec8399872e"
+}

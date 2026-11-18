@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-11-18T10:55:52Z",
+  "total_sessions": 15,
+  "succeeded": 15,
+  "failed": 0,
+  "total_elapsed_s": 1.41,
+  "sessions": [
+    {
+      "file": "test_pack/sessions\\session_01_worked_example.yaml",
+      "status": "succeeded",
+      "total_steps": 8,
+      "final_timeline_hash": "54c236d4cda667cf188a6988fa14f7b3de97ce4fb1e09c7429f48417a9b271b9",
+      "final_duration_s": 190.2,
+      "elapsed_s": 0.1511
+    },
+    {
+      "file": "test_pack/sessions\\session_02_filler_removal.yaml",
+      "status": "succeeded",
+      "total_steps": 3,
+      "final_timeline_hash": "3609bad60b9c9d977a725b8be13bc07fe2ff67c82cce6e43c8cf6d9095bc0e13",
+      "final_duration_s": 239.3,
+      "elapsed_s": 0.0942
+    },
+    {
+      "file": "test_pack/sessions\\session_03_silence_removal.yaml",
+      "status": "succeeded",
+      "total_steps": 2,
+      "final_timeline_hash": "403fd8087a3492ab5538604b36c12539f1203733e3b2971f9af09c1866270d33",
+      "final_duration_s": 240.0,
+      "elapsed_s": 0.091
+    },
+    {
+      "file": "test_pack/sessions\\session_04_background_music_ducking.yaml",
+      "status": "succeeded",
+      "total_steps": 3,
+      "final_timeline_hash": "eaddfbcde846dc72178b97d98b827d7ec50934d89f8dedc2fd10379de5b2ccc4",
+      "final_duration_s": 210.0,
+      "elapsed_s": 0.0993
+    },
+    {
+      "file": "test_pack/sessions\\session_05_two_speaker_podcast.yaml",
+      "status": "succeeded",
+      "total_steps": 2,
+      "final_timeline_hash": "2189ef133b40c5ab7af964acf8bf98e8dc5dbcadb2bd8fb19ae7ffec8399872e",
+      "final_duration_s": 54.2,
+      "elapsed_s": 0.0652
+    },
+    {
+      "file": "test_pack/sessions\\session_06_hard_case_1_cut_restore_caption.yaml",
+      "status": "succeeded",
+      "total_steps": 4,
+      "final_timeline_hash": "b214fba313ac2fb52d475a63fbf1b75cc5247f68945f0bd976f7a82def737747",
+      "final_duration_s": 240.0,
+      "elapsed_s": 0.0952
+    },
+    {
+      "file": "test_pack/sessions\\session_07_hard_case_2_reorder_mute_filler.yaml",
+      "status": "succeeded",
+      "total_steps": 3,
+      "final_timeline_hash": "f0b0e0e9fa81a0e9fd95bb49921ccb50908b3ff7328448a1a175fa8b30ef3647",
+      "final_duration_s": 210.0,
+      "elapsed_s": 0.0965
+    },
+    {
+      "file": "test_pack/sessions\\session_08_hard_case_3_repeated_cut_natural_times.yaml",
+      "status": "succeeded",
+      "total_steps": 4,
+      "final_timeline_hash": "080e92a15ee5d2159615763aeeae1ffbf9f995d5046ba69283888a518f790362",
+      "final_duration_s": 160.0,
+      "elapsed_s": 0.0899
+    },
+    {
+      "file": "test_pack/sessions\\session_09_hard_case_4_selective_undo_no_caption.yaml",
+      "status": "succeeded",
+      "total_steps": 5,
+      "final_timeline_hash": "89e5ec537ff558a44b9d616ce6969709c0e9287baf2bab7b4fd28e479e5e789e",
+      "final_duration_s": 230.0,
+      "elapsed_s": 0.091
+    },
+    {
+      "file": "test_pack/sessions\\session_10_hard_case_5_multiple_thanks.yaml",
+      "status": "succeeded",
+      "total_steps": 1,
+      "final_timeline_hash": "c517e7fd7a835aef077864436f4f362e816133617d9153651e85a5ffac622878",
+      "final_duration_s": 226.5,
+      "elapsed_s": 0.0842
+    },
+    {
+      "file": "test_pack/sessions\\session_11_hard_case_6_speed_10x_impossible_multipart.yaml",
+      "status": "succeeded",
+      "total_steps": 3,
+      "final_timeline_hash": "79bb94ca4936e18dbcd81fa0a58684334866c192e694589dc3ec4ed30ae224a2",
+      "final_duration_s": 229.95,
+      "elapsed_s": 0.0997
+    },
+    {
+      "file": "test_pack/sessions\\session_12_hard_case_7_vfr_no_audio.yaml",
+      "status": "succeeded",
+      "total_steps": 2,
+      "final_timeline_hash": "5d4debf81b38d71825cece67920caaaa87b888769d1968faa270dadec6676e7e",
+      "final_duration_s": 54.95,
+      "elapsed_s": 0.061
+    },
+    {
+      "file": "test_pack/sessions\\session_13_speed_readable_minimum.yaml",
+      "status": "succeeded",
+      "total_steps": 3,
+      "final_timeline_hash": "4382623c16f468b54594aa3011f0a3e0ac1414372a368e9d693f67c29b77df69",
+      "final_duration_s": 233.3333,
+      "elapsed_s": 0.0959
+    },
+    {
+      "file": "test_pack/sessions\\session_14_semantic_search_cost_pricing.yaml",
+      "status": "succeeded",
+      "total_steps": 1,
+      "final_timeline_hash": "321b518462425b39a8c28d4751b2ea58bc1a68d8b9938564e645f07e140a6eff",
+      "final_duration_s": 233.2,
+      "elapsed_s": 0.0892
+    },
+    {
+      "file": "test_pack/sessions\\session_15_full_pipeline_render.yaml",
+      "status": "succeeded",
+      "total_steps": 5,
+      "final_timeline_hash": "e06e95821bbf421eb4c16c64548c92c4eb6727128aa88035d600cfe354506e9f",
+      "final_duration_s": 195.0,
+      "elapsed_s": 0.0919
+    }
+  ]
+}

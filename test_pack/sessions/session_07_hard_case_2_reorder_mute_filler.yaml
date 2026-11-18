@@ -1,0 +1,7 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: 'Hard Case 2: Section reordered, word inside it muted, filler removal
+  cutting into bleeped word'
+steps:
+- say: Bleep the word pricing
+- say: Remove filler words
+- say: Cut the first 30 seconds

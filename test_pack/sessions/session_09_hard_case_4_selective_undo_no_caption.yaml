@@ -1,0 +1,9 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: 'Hard Case 4: ''Undo second-to-last cut but keep music'', ''make it bigger''
+  when no caption exists'
+steps:
+- say: Cut the first 30 seconds
+- say: Add background music that automatically gets quieter under speech
+- say: Cut 0:30-0:40
+- say: Undo the second-to-last cut but keep the music
+- say: Make that caption bigger

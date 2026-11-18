@@ -1,0 +1,87 @@
+{
+  "test_pack_version": "1.0.0",
+  "engine": "IncuBrix Prompt-Based Video Editing Engine",
+  "verification_index": {
+    "must_haves": {
+      "mh_1_never_damage_original": {
+        "test_file": "tests/test_must_haves.py::test_must_have_1_never_damage_original",
+        "output_evidence": "test_pack/outputs/session_01_worked_example/results.json",
+        "sha256_verified": true
+      },
+      "mh_2_edits_stick_to_content": {
+        "test_file": "tests/test_must_haves.py::test_must_have_2_edits_stick_to_content",
+        "output_evidence": "test_pack/outputs/session_01_worked_example/timeline.json"
+      },
+      "mh_3_three_way_answers": {
+        "test_file": "tests/test_must_haves.py::test_must_have_3_three_way_answers",
+        "output_evidence": "test_pack/outputs/session_01_worked_example/results.json"
+      },
+      "mh_4_predictability": {
+        "test_file": "tests/test_must_haves.py::test_must_have_4_predictability",
+        "determinism_runs": 3,
+        "identical_hash_rate": "100%"
+      },
+      "mh_5_render_matches_timeline": {
+        "test_file": "tests/test_must_haves.py::test_must_have_5_render_matches_timeline",
+        "output_video": "test_pack/outputs/test_render_accuracy.mp4",
+        "frame_accuracy_diff": "<= 1 frame"
+      },
+      "mh_6_all_operations_undo_redo": {
+        "test_file": "tests/test_must_haves.py::test_must_have_6_all_operations_and_undo_redo",
+        "output_evidence": "test_pack/outputs/session_09_hard_case_4_selective_undo_no_caption/results.json"
+      },
+      "mh_7_clear_time_policy": {
+        "test_file": "tests/test_must_haves.py::test_must_have_7_clear_time_policy",
+        "policy": "original_media_time",
+        "output_evidence": "test_pack/outputs/session_01_worked_example/results.json"
+      },
+      "mh_8_session_runner": {
+        "test_file": "tests/test_must_haves.py::test_must_have_8_session_runner",
+        "command": "python -m engine.session_runner test_pack/sessions/session_01_worked_example.yaml",
+        "output_file": "test_pack/outputs/mh8_test/results.json"
+      }
+    },
+    "levels": {
+      "core": {
+        "all_must_haves": "tests/test_must_haves.py",
+        "worked_example_8_steps": "tests/test_worked_example.py",
+        "single_speaker": "tests/test_levels.py::test_core_single_speaker",
+        "multi_speaker": "tests/test_levels.py::test_core_multi_speaker"
+      },
+      "advanced": {
+        "edits_shift_each_other": "tests/test_levels.py::test_advanced_caption_readability_minimum_on_speed",
+        "partial_cuts_rule": "tests/test_levels.py::test_advanced_partial_cut_of_captioned_phrase_rule",
+        "two_speakers_host_leadin": "tests/test_levels.py::test_advanced_two_speakers_host_leadin",
+        "ambiguity_and_references": "tests/test_levels.py::test_advanced_ambiguity_and_references"
+      },
+      "outstanding": {
+        "silence_snapping": "tests/test_levels.py::test_outstanding_silence_snapping",
+        "scale_60_minute_video": "tests/test_levels.py::test_outstanding_scale_60_minute_video",
+        "opentimelineio_export": "tests/test_levels.py::test_outstanding_opentimelineio_export",
+        "proof_40_scenarios": "tests/test_scenarios_suite.py"
+      }
+    },
+    "hard_cases": {
+      "case_1_cut_restore_caption": "tests/test_hard_cases.py::test_hard_case_1_cut_restore_caption",
+      "case_2_reorder_mute_filler": "tests/test_hard_cases.py::test_hard_case_2_reorder_mute_filler",
+      "case_3_repeated_cut_natural_times": "tests/test_hard_cases.py::test_hard_case_3_repeated_cut_and_out_of_bounds_and_natural_times",
+      "case_4_selective_undo_no_caption": "tests/test_hard_cases.py::test_hard_case_4_selective_undo_no_caption",
+      "case_5_multiple_thanks": "tests/test_hard_cases.py::test_hard_case_5_multiple_thanks",
+      "case_6_speed_10x_multipart": "tests/test_hard_cases.py::test_hard_case_6_speed_10x_impossible_and_multipart",
+      "case_7_two_speaker_vfr_quality": "tests/test_hard_cases.py::test_hard_case_7_two_speaker_vfr_quality_warnings"
+    },
+    "integration_standard": {
+      "point_1_one_command_start": "tests/test_integration.py::test_point_1_one_command_start_and_test",
+      "point_2_documented_http_api": "tests/test_integration.py::test_point_2_documented_http_api",
+      "point_3_background_jobs": "tests/test_integration.py::test_point_3_background_jobs_and_webhook_hmac",
+      "point_4_safe_retries": "tests/test_integration.py::test_point_4_safe_retries_idempotency",
+      "point_5_clear_errors": "tests/test_integration.py::test_point_5_clear_errors",
+      "point_6_configuration": "tests/test_integration.py::test_point_6_configuration",
+      "point_7_files_in_files_out": "tests/test_integration.py::test_point_7_files_in_files_out",
+      "point_8_logs_and_health": "tests/test_integration.py::test_point_8_logs_and_health",
+      "point_9_output_manifest": "tests/test_integration.py::test_point_9_output_manifest",
+      "point_10_batch_runner": "tests/test_integration.py::test_point_10_batch_runner"
+    }
+  }
+}
+

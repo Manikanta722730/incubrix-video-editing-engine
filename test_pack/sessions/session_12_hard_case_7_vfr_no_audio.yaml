@@ -1,0 +1,5 @@
+video: test_pack/media/phone_vfr_video.mp4
+description: 'Hard Case 7: Phone video with variable frame rate (24fps)'
+steps:
+- say: Cut the first 5 seconds
+- say: render

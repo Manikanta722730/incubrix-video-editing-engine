@@ -1,0 +1,27 @@
+{
+  "session_file": "test_pack/sessions\\session_10_hard_case_5_multiple_thanks.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 1,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Remove everything after I say thanks",
+      "status": "applied",
+      "operations": [
+        "cut_after_word"
+      ],
+      "summary": "Cut everything after 'thanks' (from 03:46.500 onwards). New duration: 03:46.500.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "c517e7fd7a835aef077864436f4f362e816133617d9153651e85a5ffac622878",
+      "duration_s": 226.5,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 226.5,
+  "final_timeline_hash": "c517e7fd7a835aef077864436f4f362e816133617d9153651e85a5ffac622878"
+}

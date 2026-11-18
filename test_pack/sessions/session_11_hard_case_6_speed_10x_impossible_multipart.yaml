@@ -1,0 +1,7 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: 'Hard Case 6: ''Speed up 10x'' (rejected), ''cut everything'' (rejected),
+  multi-part instruction'
+steps:
+- say: Speed up 10x
+- say: Cut everything
+- say: Cut the first 10 seconds and speed up 10x

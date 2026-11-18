@@ -1,0 +1,6 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: Sped-up captions maintain at least 0.70s readable minimum
+steps:
+- say: Add a caption 'Welcome!' when I say welcome to the channel
+- say: Speed up from 0:40 to 0:50 by 3x
+- say: render

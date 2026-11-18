@@ -1,0 +1,73 @@
+{
+  "session_file": "test_pack/sessions\\session_08_hard_case_3_repeated_cut_natural_times.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 4,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Remove 0:30-0:40",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 10.0s (00:30 to 00:40). Duration changed from 04:00 to 03:50. Using policy 'original_media_time': input 00:30-00:40 maps to current timeline 00:30 to 00:40.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "b1f43702daf5711585b599cab97d3e26709a5d81dc0786289014f9026f078c2c",
+      "duration_s": 230.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "Remove 0:30-0:40",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 0.0s (00:30 to 00:40). Duration changed from 03:50 to 03:50. Using policy 'original_media_time': input 00:30-00:40 maps to current timeline 00:30 to 00:30.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "b1f43702daf5711585b599cab97d3e26709a5d81dc0786289014f9026f078c2c",
+      "duration_s": 230.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "Add a caption at 5:00",
+      "status": "rejected",
+      "operations": [],
+      "summary": "",
+      "question": null,
+      "options": null,
+      "reason": "Requested timestamp 05:00 is beyond video duration (04:00).",
+      "timeline_hash": "b1f43702daf5711585b599cab97d3e26709a5d81dc0786289014f9026f078c2c",
+      "duration_s": 230.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 4,
+      "say": "Cut the first 80 seconds",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 70.0s (00:00 to 01:20). Duration changed from 03:50 to 02:40. Using policy 'original_media_time': input 00:00-01:20 maps to current timeline 00:00 to 01:10.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "080e92a15ee5d2159615763aeeae1ffbf9f995d5046ba69283888a518f790362",
+      "duration_s": 160.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 160.0,
+  "final_timeline_hash": "080e92a15ee5d2159615763aeeae1ffbf9f995d5046ba69283888a518f790362"
+}

@@ -1,0 +1,91 @@
+{
+  "session_file": "test_pack/sessions\\session_15_full_pipeline_render.yaml",
+  "video": "test_pack/media/single_speaker_interview.mp4",
+  "source_sha256": "511e7d9ee2500a0b0f2543b029a6fc96915b1bd96a8c50112ebdba8aa352e88f",
+  "untouched_verified": true,
+  "total_steps": 5,
+  "steps": [
+    {
+      "step_index": 1,
+      "say": "Add a caption 'Welcome!' when I say welcome to the channel",
+      "status": "applied",
+      "operations": [
+        "add_caption"
+      ],
+      "summary": "Caption 'Welcome!' attached to 4 words ('welcome to the channel') at original time 00:42-00:44. Currently plays at 00:42-00:44 on active timeline.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "af969f5aa97e13efc36075cdcfeec7972ab8c1dcf74995567a486ccb0cb6395a",
+      "duration_s": 240.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 2,
+      "say": "Cut the first 30 seconds",
+      "status": "applied",
+      "operations": [
+        "cut_range"
+      ],
+      "summary": "Cut 30.0s (00:00 to 00:30). Duration changed from 04:00 to 03:30. Using policy 'original_media_time': input 00:00-00:30 maps to current timeline 00:00 to 00:30. Caption 'Welcome!' now plays at 00:12-00:14.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "7d94fd063403e3c2ff66e271aefcd40eb84e2405274514b4918fa8dde9ad169b",
+      "duration_s": 210.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 3,
+      "say": "Speed up from 1:00 to 1:30 by 2x",
+      "status": "applied",
+      "operations": [
+        "speed_range"
+      ],
+      "summary": "Applied 2.0x speed from 01:00 to 01:30. Duration updated to 03:15. Using policy 'original_media_time': input 01:00-01:30 maps to current timeline 00:30 to 01:00.",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "f03899a7f9ff4781348347ad55e2d381c3d218215e93e613aa8026ea336d5819",
+      "duration_s": 195.0,
+      "time_policy": "original_media_time",
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 4,
+      "say": "Add background music that automatically gets quieter under speech",
+      "status": "applied",
+      "operations": [
+        "add_background_music"
+      ],
+      "summary": "Added background music track with automatic ducking (-18dB under speech).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "e06e95821bbf421eb4c16c64548c92c4eb6727128aa88035d600cfe354506e9f",
+      "duration_s": 195.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    },
+    {
+      "step_index": 5,
+      "say": "render",
+      "status": "applied",
+      "operations": [
+        "render"
+      ],
+      "summary": "Audio and video in sync within 1 frame. Render length matches timeline (03:15).",
+      "question": null,
+      "options": null,
+      "reason": null,
+      "timeline_hash": "e06e95821bbf421eb4c16c64548c92c4eb6727128aa88035d600cfe354506e9f",
+      "duration_s": 195.0,
+      "time_policy": null,
+      "latency_s": 0.0
+    }
+  ],
+  "final_duration_s": 195.0,
+  "final_timeline_hash": "e06e95821bbf421eb4c16c64548c92c4eb6727128aa88035d600cfe354506e9f"
+}

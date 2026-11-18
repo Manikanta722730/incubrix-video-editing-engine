@@ -1,0 +1,6 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: 'Semantic search: ''pricing'' finds multiple cost mentions and asks with
+  options'
+steps:
+- say: Remove the part about pricing
+  answer: First occurrence

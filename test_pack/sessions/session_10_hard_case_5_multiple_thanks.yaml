@@ -1,0 +1,6 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: 'Hard Case 5: ''Remove everything after I say thanks'' where thanks is
+  said four times'
+steps:
+- say: Remove everything after I say thanks
+  answer: Last occurrence

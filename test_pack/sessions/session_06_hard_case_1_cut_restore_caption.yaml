@@ -1,0 +1,8 @@
+video: test_pack/media/single_speaker_interview.mp4
+description: 'Hard Case 1: Caption added, sentence under it cut, cut restored -> caption
+  returns on exact words'
+steps:
+- say: Add a caption 'Welcome!' when I say welcome to the channel
+- say: Cut the first 30 seconds
+- say: Actually, put the intro back
+- say: Make that caption red
