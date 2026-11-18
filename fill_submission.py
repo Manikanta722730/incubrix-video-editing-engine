@@ -18,7 +18,7 @@ details = {
     "Live demo access token or login (if protected)": "No auth required",
     "Cold-start wait time (if any)": "~2 seconds (pip install)",
     "Repository URL (private, reviewer invited)": (
-        "https://github.com/manikanta/incubrix-video-editing-engine "
+        "https://github.com/Manikanta722730/incubrix-video-editing-engine "
         "(reviewer: techteam@incubrix.com)"
     ),
     "Demo video URL (max 8 min, unedited)": "To be added after recording",
