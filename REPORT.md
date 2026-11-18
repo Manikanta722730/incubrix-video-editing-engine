@@ -229,3 +229,4 @@ A cut at 0:30.5 that falls mid-word "inter-view" would produce an audible glitch
 
 ### Why FFmpeg via imageio-ffmpeg?
 `imageio-ffmpeg` ships a static binary that works on Windows, macOS, and Linux with no system-level FFmpeg installation. This matches the requirement to run from README with zero manual setup steps.
+
